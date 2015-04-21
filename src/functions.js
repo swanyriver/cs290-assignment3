@@ -13,6 +13,9 @@
 */
 
 //your code here
+function uselessFunction() {
+  return null;
+}
 
 //end your code
 
@@ -30,6 +33,24 @@ var barType = typeof bar;
 */
 
 //your code here
+
+bar = function(doubleArray) {
+
+  //console.log('input for bar (array doubling):', doubleArray);
+
+  for (var i = doubleArray.length - 1; i >= 0; i--) {
+    if (isNaN(doubleArray[i])) {
+      //console.log('exiting bar', doubleArray[i], 'is NaN');
+      return false;
+    }
+
+    doubleArray[i] = doubleArray[i] * 2;
+    //console.log(doubleArray[i]);
+  }
+
+  //console.log('output for bar (array doubling):', doubleArray);
+  return true;
+};
 
 //end your code
 
