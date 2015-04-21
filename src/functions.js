@@ -87,6 +87,18 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+function parseGit(logArray) {
 
+  Glogs = [];
+
+  for (var i = logArray.length - 1; i >= 0; i--) {
+    var parsedHash =
+    var parsedDate =
+    var parsedMessage =
+    Glogs[i] = new GitLog(parsedHash, parsedDate, parsedMessage);
+  }
+
+  return Glogs;
+}
 
 //end your code
