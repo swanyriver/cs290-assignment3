@@ -39,6 +39,13 @@ function returnObjectLiteral() {
 
 //your code here
 
+function MessageLog(user) {
+  this.user = user;
+  this.logMessage = function(messageText, direction) {
+
+  }
+}
+
 //end your code
 
 /**
