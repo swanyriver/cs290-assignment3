@@ -89,7 +89,7 @@ function GitLog(hash, date, message) {
 //your code here
 function parseGit(logArray) {
 
-  Glogs = [];
+  var Glogs = [];
 
   for (var i = logArray.length - 1; i >= 0; i--) {
     var parsedHash = logArray[i].slice(0, logArray[i].indexOf(' '));

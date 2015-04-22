@@ -40,39 +40,39 @@ function returnObjectLiteral() {
 //your code here
 
 function MessageLog(user) {
-  var SENT = 0;
-  var RECIEVED = 1;
-  var MSGLIMIT = 5;
-  var _totalSent = 0;
-  var _totalRecieved = 0;
-  var _sentMessages = [];
+  this.SENT = 0;
+  this.RECIEVED = 1;
+  this.MSGLIMIT = 5;
+  this._totalSent = 0;
+  this._totalRecieved = 0;
+  this._sentMessages = [];
   this._recievedMessages = [];
   this.user = user;
 
   this.logMessage = function(messageText, direction) {
-    if (direction == SENT) {
-      _totalSent++;
-      if (_sentMessages.push(messageText) > MSGLIMIT) {
-        _sentMessages.shift();
+    if (direction == this.SENT) {
+      this._totalSent++;
+      if (this._sentMessages.push(messageText) > this.MSGLIMIT) {
+        this._sentMessages.shift();
       }
-    } else if (direction == RECIEVED) {
-      _totalRecieved++;
-      if (this._recievedMessages.push(messageText) > MSGLIMIT) {
+    } else if (direction == this.RECIEVED) {
+      this._totalRecieved++;
+      if (this._recievedMessages.push(messageText) > this.MSGLIMIT) {
         this._recievedMessages.shift();
       }
     } else return undefined;
   };
 
   this.getSentMessage = function(n) {
-    return _sentMessages[_sentMessages.length - 1 - n];
+    return this._sentMessages[this._sentMessages.length - 1 - n];
   };
 
   this.totalSent = function() {
-    return _totalSent;
+    return this._totalSent;
   };
 
   this.totalReceived = function() {
-    return _totalRecieved;
+    return this._totalRecieved;
   };
 }
 
@@ -84,9 +84,9 @@ function MessageLog(user) {
 * received.
 */
 //your code here
-//MessageLog.prototype.lastReceivedMessage = function() {
-//  return this._recievedMessages[this._recievedMessages.length - 1];
-//};
+MessageLog.prototype.lastReceivedMessage = function() {
+  return this._recievedMessages[this._recievedMessages.length - 1];
+};
 //end your code
 
 /**
