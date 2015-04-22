@@ -46,14 +46,20 @@ function MessageLog(user) {
   var _totalSent = 0;
   var _totalRecieved = 0;
   var _sentMessages = [];
+  var _recievedMessages = [];
   this.user = user;
 
   this.logMessage = function(messageText, direction) {
     if (direction == SENT) {
       _totalSent++;
-      if (_sentMessages.push(messageText) > MSGLIMIT) _sentMessages.shift();
+      if (_sentMessages.push(messageText) > MSGLIMIT) {
+        _sentMessages.shift();
+      }
     } else if (direction == RECIEVED) {
       _totalRecieved++;
+      if (_recievedMessages.push(messageText) > MSGLIMIT) {
+        _recievedMessages.shift();
+      }
     } else return null;
   };
 
@@ -78,7 +84,9 @@ function MessageLog(user) {
 * received.
 */
 //your code here
-
+MessageLog.prototype.lastReceivedMessage = function() {
+  return _recievedMessages[_recievedMessages.length - 1];
+};
 //end your code
 
 /**
@@ -88,5 +96,9 @@ function MessageLog(user) {
 */
 
 //your code here
+var myLog = new MessageLog('BlackHatGuy');
+myLog.logMessage('foo', 1);
+myLog.logMessage('bar', 1);
+myLog.logMessage('baz', 1);
 
 //end your code
