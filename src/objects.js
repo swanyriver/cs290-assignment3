@@ -40,10 +40,34 @@ function returnObjectLiteral() {
 //your code here
 
 function MessageLog(user) {
+  var SENT = 0;
+  var RECIEVED = 1;
+  var MSGLIMIT = 5;
+  var _totalSent = 0;
+  var _totalRecieved = 0;
+  var _sentMessages = [];
   this.user = user;
-  this.logMessage = function(messageText, direction) {
 
-  }
+  this.logMessage = function(messageText, direction) {
+    if (direction == SENT) {
+      _totalSent++;
+      if (_sentMessages.push(messageText) > MSGLIMIT) _sentMessages.shift();
+    } else if (direction == RECIEVED) {
+      _totalRecieved++;
+    } else return null;
+  };
+
+  this.getSentMessage = function(n) {
+    return _sentMessages[4 - n];
+  };
+
+  this.totalSent = function() {
+    return _totalSent;
+  };
+
+  this.totalReceived = function() {
+    return _totalRecieved;
+  };
 }
 
 //end your code
