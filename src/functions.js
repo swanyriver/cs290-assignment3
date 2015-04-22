@@ -93,8 +93,9 @@ function parseGit(logArray) {
 
   for (var i = logArray.length - 1; i >= 0; i--) {
     var parsedHash = logArray[i].slice(0, logArray[i].indexOf(' '));
-    var parsedDate = logArray[i].slice(
+    var parsedDateSTR = logArray[i].slice(
       logArray[i].indexOf(' '), logArray[i].indexOf('"'));
+    var parsedDate = new Date(parsedDateSTR);
     var parsedMessage = logArray[i].slice(
       logArray[i].indexOf('"') + 1, logArray[i].length - 1);
 
