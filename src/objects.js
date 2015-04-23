@@ -46,7 +46,7 @@ function MessageLog(user) {
   this._totalSent = 0;
   this._totalRecieved = 0;
   this._sentMessages = [];
-  this._recievedMessages = [];
+  this._lastRecievedMessage = null;
   this.user = user;
 
   this.logMessage = function(messageText, direction) {
@@ -57,9 +57,7 @@ function MessageLog(user) {
       }
     } else if (direction == this.RECIEVED) {
       this._totalRecieved++;
-      if (this._recievedMessages.push(messageText) > this.MSGLIMIT) {
-        this._recievedMessages.shift();
-      }
+      this._lastRecievedMessage = messageText;
     } else return undefined;
   };
 
@@ -85,7 +83,7 @@ function MessageLog(user) {
 */
 //your code here
 MessageLog.prototype.lastReceivedMessage = function() {
-  return this._recievedMessages[this._recievedMessages.length - 1];
+  return this._lastRecievedMessage;
 };
 //end your code
 
