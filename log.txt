@@ -1,1 +1,154 @@
-You log goes in this  file.
+----------------------------------------------
+ASSIGNMENT 3 part-1
+----------------------------------------------
+
+Start: Wed, 22 Apr 2015 19:05:28 -0700
+End: Wed, 22 Apr 2015 19:15:28 -0700 
+Tasks: changed message recieved array to only storing one message, 10min
+Start: Tue, 21 Apr 2015 20:12:20 -0700 
+End: Tue, 21 Apr 2015 20:27:00 -0700 
+Tasks: completed objects.js and rectified addition of global to window in pargegit function
+Start: Tue, 21 Apr 2015 19:21:55 -0700
+End: Tue, 21 Apr 2015 20:12:20 -0700 
+Tasks: corrected bug for total sent when array length is under 5, and changed return to undefined for directions other than 0 and 1
+Start: Tue, 21 Apr 2015 19:03:18 -0700 
+End: Tue, 21 Apr 2015 19:21:55 -0700 
+Tasks: added to message log prototype and created a message log instance
+Start: Tue, 21 Apr 2015 18:48:12 -0700
+End: Tue, 21 Apr 2015 19:03:18 -0700 
+Tasks: implemented messagelog methods, used push and shift to emulate a messeage queue and 4 minus n for reverse acess
+Start: Tue, 21 Apr 2015 18:20:51 -0700 
+End: Tue, 21 Apr 2015 18:48:12 -0700 
+Tasks: set up messageLog object functions
+Start: Tue, 21 Apr 2015 17:35:30 -0700
+End: Tue, 21 Apr 2015 18:20:51 -0700 
+Tasks: implemented object litereal function,  fixed parseGit to use a Date object in gitlog constructor call
+Start: Tue, 21 Apr 2015 17:00:30 -0700 
+End: Tue, 21 Apr 2015 17:35:30 -0700 
+Tasks: worked on variables.js completing all three functions 35 minutes
+Start: Mon, 20 Apr 2015 22:17:28 -0700
+End: Mon, 20 Apr 2015 22:35:23 -0700 
+Tasks: finished parseGit function, used chromedev console for testing string methods slice and indexOf
+Start: Mon, 20 Apr 2015 21:58:31 -0700
+End: Mon, 20 Apr 2015 22:17:28 -0700 
+Tasks: set up template loop/assignment/return for parsing git logs in parseGit function
+Start: Mon, 20 Apr 2015 21:45:31 -0700 
+End: Mon, 20 Apr 2015 21:58:31 -0700 
+Tasks: worked on functions.js, uselessFunction and bar,  used console.log messages to test doubling of array and detecting non numerical values
+Start: Mon, 20 Apr 2015 18:22:03 -0700
+End: Mon, 20 Apr 2015 18:42:03 -0700 
+Tasks: Upgraded to sublime 3, installed gjslint and sublimelint-gjslint plugin
+Start: Sun, 19 Apr 2015 19:44:00 -0700
+End: Sun, 19 Apr 2015 19:46:02 -0700 
+Tasks: clone of cs290 repo
+
+----------------------------------------------
+ASSIGNMENT 3 part-2
+----------------------------------------------
+
+
+Start: Sat, 25 Apr 2015 13:26:39 -0700
+End: Sat, 25 Apr 2015 16:20:39 -0700 
+Tasks: add documentation, decrease profile image size, append favorite to top of list
+Start: Sat, 25 Apr 2015 12:36:20 -0700 
+End: Sat, 25 Apr 2015 13:26:39 -0700 
+Tasks: preventing duplicates in list
+Start: Sat, 25 Apr 2015 12:15:20 -0700
+End: Sat, 25 Apr 2015 12:36:20 -0700 
+Tasks: fixed style problems and checked for accidental global variables
+Start: Fri, 24 Apr 2015 23:40:55 -0700 
+End: Fri, 24 Apr 2015 23:46:25 -0700 
+Tasks: fixed bug of list not refreshing when last one of selected languages is favorited
+Start: Fri, 24 Apr 2015 20:11:24 -0700 
+End: Fri, 24 Apr 2015 20:32:55 -0700 
+Tasks: js generation of new html format for list items, first function complete commit
+Start: Fri, 24 Apr 2015 19:51:52 -0700 
+End: Fri, 24 Apr 2015 20:11:24 -0700 
+Tasks: redesigned html and css for list item
+Start: Fri, 24 Apr 2015 18:47:33 -0700 
+End: Fri, 24 Apr 2015 19:51:52 -0700 
+Tasks: language filtering working, correcte bugs caused by favoriting unfavoriting and searching again
+Start: Fri, 24 Apr 2015 18:21:29 -0700 
+End: Fri, 24 Apr 2015 18:47:33 -0700 
+Tasks: language numbers added and languages of each gist aded to list item
+Start: Fri, 24 Apr 2015 16:43:08 -0700 
+End: Fri, 24 Apr 2015 18:21:29 -0700 
+Tasks: populate a list of checkboxes with languages
+Start: Fri, 24 Apr 2015 16:00:08 -0700 
+End: Fri, 24 Apr 2015 16:43:08 -0700 
+Tasks: requesting multiple pages using recursive call 1hour
+Start: Fri, 24 Apr 2015 01:13:29 -0700 
+End: Fri, 24 Apr 2015 01:43:53 -0700 
+Tasks: count the number of each langauge
+Start: Fri, 24 Apr 2015 00:58:12 -0700 
+End: Fri, 24 Apr 2015 01:13:29 -0700 
+Tasks: generated unique list of present programming languages,  should it include ones in favorite, if not how will it be updated when one is favorited
+Start: Fri, 24 Apr 2015 00:53:12 -0700 
+End: Fri, 24 Apr 2015 00:58:12 -0700 
+Tasks: reviewed completed objectives and made plan for tommorows efforts
+Start: Fri, 24 Apr 2015 00:43:51 -0700 
+End: Fri, 24 Apr 2015 00:53:12 -0700 
+Tasks: remove favorite implemented
+Start: Fri, 24 Apr 2015 00:33:41 -0700 
+End: Fri, 24 Apr 2015 00:43:51 -0700 
+Tasks: favorites are filtered from search results
+Start: Thu, 23 Apr 2015 22:25:03 -0700 
+End: Fri, 24 Apr 2015 00:33:41 -0700 
+Tasks: JSON string store favs and recreate from local storage
+Start: Thu, 23 Apr 2015 22:25:03 -0700 
+End: Thu, 23 Apr 2015 22:48:54 -0700 
+Tasks: made a plan in tasks for using local storage and JSON stringify and parse
+Start: Thu, 23 Apr 2015 21:53:49 -0700 
+End: Thu, 23 Apr 2015 22:25:03 -0700 
+Tasks: modified favorite list elements
+Start: Thu, 23 Apr 2015 20:17:36 -0700 
+End: Thu, 23 Apr 2015 21:53:49 -0700 
+Tasks: items move from list to favorites
+Start: Thu, 23 Apr 2015 20:15:02 -0700 
+End: Thu, 23 Apr 2015 20:17:36 -0700 
+Tasks: remove gits constructor function, gists are now just objects
+Start: Thu, 23 Apr 2015 19:14:28 -0700 
+End: Thu, 23 Apr 2015 20:15:02 -0700 
+Tasks: minor styling changes10 min
+Start: Thu, 23 Apr 2015 18:59:13 -0700
+End: Thu, 23 Apr 2015 19:14:28 -0700 
+Tasks: display of full list displayed
+Start: Thu, 23 Apr 2015 18:33:09 -0700
+End: Thu, 23 Apr 2015 18:59:13 -0700 
+Tasks: generating from html seems to be working
+Start: Thu, 23 Apr 2015 18:22:34 -0700 
+End: Thu, 23 Apr 2015 18:33:09 -0700 
+Tasks: corrected html using w3org validator
+Start: Thu, 23 Apr 2015 17:20:54 -0700 
+End: Thu, 23 Apr 2015 18:22:34 -0700 
+Tasks: made an html template to code up for gist item
+Start: Thu, 23 Apr 2015 17:11:42 -0700 
+End: Thu, 23 Apr 2015 17:20:54 -0700 
+Tasks: testing to see if css selectors are applied to html added by javascript,  they are
+Start: Thu, 23 Apr 2015 16:26:06 -0700 
+End: Thu, 23 Apr 2015 17:11:42 -0700 
+Tasks: made an array of gist object with needed properties parsed from json object
+Start: Thu, 23 Apr 2015 16:01:12 -0700 
+End: Thu, 23 Apr 2015 16:26:06 -0700 
+Tasks: sucessfully acessed language property of files
+Start: Thu, 23 Apr 2015 15:20:36 -0700 
+End: Thu, 23 Apr 2015 16:01:12 -0700 
+Tasks: attempting to use cached gist json string for testing
+Start: Thu, 23 Apr 2015 15:00:36 -0700
+End: Thu, 23 Apr 2015 15:20:36 -0700 
+Tasks: asserting that all gists have at least one file, and testing acesss of avatar_url
+Start: Wed, 22 Apr 2015 22:54:15 -0700 
+End: Wed, 22 Apr 2015 23:00:02 -0700 
+Tasks: succesfully itterate over individual gists and access a field using .forEach
+Start: Wed, 22 Apr 2015 22:32:32 -0700 
+End: Wed, 22 Apr 2015 22:54:15 -0700 
+Tasks: asserted that i was recieving the JSON string from github using console output,  discovered i needed to acesses .response not .responsetext
+Start: Wed, 22 Apr 2015 21:59:16 -0700
+End: Wed, 22 Apr 2015 22:32:32 -0700 
+Tasks: xmlhttpRequest framework an logging ready
+Start: Wed, 22 Apr 2015 21:39:47 -0700
+End: Wed, 22 Apr 2015 21:59:16 -0700 
+Tasks: making sure html and js file were linked,  forgot () at end of function name at first, working now
+Start: Wed, 22 Apr 2015 21:35:47 -0700 
+End: Wed, 22 Apr 2015 21:39:47 -0700 
+Tasks: initial commit with html template
